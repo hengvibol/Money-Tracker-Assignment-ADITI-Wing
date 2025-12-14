@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>Money Tracker</h1>
+
+        <div class="tracker-container">
+            <div class="balance-display">
+                <h2>Balance: $<span id="balance-amount">0.00</span></h2>
+            </div>
+
+            <div class="transaction-display">
+                <div class="income-display">
+                    <h3>Income</h3>
+                    <span id="income-amount">$0.00</span>
+                </div>
+
+                <div class="expense-display">
+                    <h3>Expense</h3>
+                    <span id="expense-amount">$0.00</span>
+                </div>
+            </div>
+
+
+            <div class="transaction-form">
+                <input type="text" id="note-input" placeholder="Note">
+                <input type="number" id="amount-input" placeholder="Amount">
+                <select id="type-select">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button id="add-transaction-btn">Add Transaction</button>
+            </div>
+
+            <div class="transaction-history">
+                <h3>Transaction History</h3>
+                <ul id="transaction-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
